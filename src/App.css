@@ -4,3 +4,10 @@
   padding: 2rem;
   text-align: center;
 }
+
+.logo {
+  color: #12F7D6;
+  border: 1px solid #12F7D6;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+}

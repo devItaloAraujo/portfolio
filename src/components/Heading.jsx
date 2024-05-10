@@ -9,11 +9,11 @@ Heading.propTypes = {
 export function Heading ({content, setContent}) {
 
     return (
-        <>
-        <div>
+      <div className="container flex items-center justify-between">
+        <div className="logo text-xl font-bold m-2 flex-item self-start">
           {content.heading}
         </div>
-        <div className="card">
+        <div className="">
           <button onClick={() => 
             setContent(PortugueseContent) }>
             Português
@@ -23,6 +23,6 @@ export function Heading ({content, setContent}) {
             English
           </button>
         </div>
-      </>
+      </div>
     )
 }
