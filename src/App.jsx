@@ -5,6 +5,7 @@ import { Heading } from './components/Heading'
 import { HorizontalDivider } from './components/Horizontal'
 import { AboutMe } from './components/Aboutme'
 import { Works } from './components/Works'
+import { Contact } from './components/Contact'
 
 function App() {
   const [content, setContent] = useState(EnglishContent)
@@ -16,6 +17,8 @@ function App() {
       <AboutMe content={content} />
       <HorizontalDivider />    
       <Works content={content} />
+      <HorizontalDivider />
+      <Contact content={content} />
     </>
   )
 }
