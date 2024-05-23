@@ -7,7 +7,7 @@ Works.propTypes = {
 
 export function Works({content}) {
     return (
-      <div className=" flex flex-col">   
+      <div className="flex flex-col items-center">   
         <div className="text-3xl font-bold m-2 text-brand-1">
           {content.works}
         </div>

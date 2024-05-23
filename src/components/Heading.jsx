@@ -1,5 +1,6 @@
 import { PortugueseContent, EnglishContent } from '../assets/content'
 import PropTypes from 'prop-types'
+import { motion } from 'framer-motion'
 
 Heading.propTypes = {
     content: PropTypes.object.isRequired,
@@ -9,7 +10,12 @@ Heading.propTypes = {
 export function Heading ({content, setContent}) {
 
     return (
-      <div className="container flex items-center justify-between">
+      <motion.div
+        initial={{ y: -250 }}
+        animate={{ y: 0 }}
+        transition={{ type: 'spring', stiffness: 120 }}
+        className="container flex items-center justify-between"
+        >
         <div className="logo text-xl font-bold m-2 flex-item self-start">
           {content.heading}
         </div>
@@ -23,6 +29,6 @@ export function Heading ({content, setContent}) {
             English
           </button>
         </div>
-      </div>
+      </motion.div>
     )
 }

@@ -6,7 +6,7 @@ WorkCard.propTypes = {
 
 export function WorkCard({work}) {
     return (
-      <div className="container flex flex-col bg-gray-700 rounded-lg items-center">   
+      <div className="container flex flex-col bg-second-blue rounded-lg items-center px-2">   
         <div className="text-xl font-bold m-2 text-brand-2">
           {work.title}
         </div>
