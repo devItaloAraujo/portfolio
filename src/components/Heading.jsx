@@ -10,15 +10,16 @@ Heading.propTypes = {
 export function Heading ({content, setContent}) {
 
     return (
-      <motion.div
-        initial={{ y: -250 }}
-        animate={{ y: 0 }}
-        transition={{ type: 'spring', stiffness: 120 }}
+      <div
         className="container flex items-center justify-between"
         >
-        <div className="logo text-xl font-bold m-2 flex-item self-start">
+        <motion.div
+          animate={{ scale: [1, 1.05, 1] }}
+          transition={{ duration: 1 }}
+          whileHover={{ scale: 1.05 }} 
+          className="logo text-xl font-bold m-2 flex-item self-start">
           {content.heading}
-        </div>
+        </motion.div>
         <div className="">
           <button onClick={() => 
             setContent(PortugueseContent) }>
@@ -29,6 +30,6 @@ export function Heading ({content, setContent}) {
             English
           </button>
         </div>
-      </motion.div>
+      </div>
     )
 }
