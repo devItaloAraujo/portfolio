@@ -1,3 +1,4 @@
+//List of Srcs for images of works
 const srcs = ["https://live.staticflickr.com/65535/53724012970_054b3fc38a_b.jpg"]
 
 const listOfWorksPtBr = [ {
@@ -13,35 +14,35 @@ const listOfWorks = [ {
 }];
 
 const listOfSkills = [
-    { name: "JavaScript", badgeLink: "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" },
-    { name: "TypeScript", badgeLink: "https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" },
-    { name: "React", badgeLink: "https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" },
-    { name: "Redux", badgeLink: "https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white" },
-    { name: "React Hooks", badgeLink: "https://img.shields.io/badge/React_Hooks-61DAFB?style=for-the-badge&logo=react&logoColor=black" },
-    { name: "Git", badgeLink: "https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" },
-    { name: "HTML", badgeLink: "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" },
-    { name: "CSS", badgeLink: "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" },
-    { name: "Tailwind CSS", badgeLink: "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" },
-    { name: "Unit Testing", badgeLink: "https://img.shields.io/badge/Testing-Jest-C21325?style=for-the-badge&logo=jest&logoColor=white" },
-    { name: "Python", badgeLink: "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" },
-    { name: "Object-Oriented Programming (OOP)", badgeLink: "https://img.shields.io/badge/OOP-1D1D1D?style=for-the-badge&logo=oop&logoColor=white" },
-    { name: "Docker", badgeLink: "https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" },
-    { name: "MySQL", badgeLink: "https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" },
-    { name: "Node.js", badgeLink: "https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node-dot-js&logoColor=white" },
-    { name: "Express", badgeLink: "https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" },
-    { name: "Integration Testing", badgeLink: "https://img.shields.io/badge/Integration_Testing-6DB33F?style=for-the-badge&logo=testing&logoColor=white" },
-    { name: "REST", badgeLink: "https://img.shields.io/badge/REST-008080?style=for-the-badge&logo=rest&logoColor=white" },
-    { name: "JSON Web Token (JWT)", badgeLink: "https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white" },
-    { name: "ORM (Sequelize)", badgeLink: "https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=sequelize&logoColor=white" },
-    { name: "Java", badgeLink: "https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=coffeescript&logoColor=white" },
-    { name: "Maven", badgeLink: "https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white" },
-    { name: "Spring", badgeLink: "https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" },
-    { name: "Spring Boot", badgeLink: "https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" },
-    { name: "Spring Data JPA", badgeLink: "https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white" },
-    { name: "JUnit 5", badgeLink: "https://img.shields.io/badge/JUnit_5-25A162?style=for-the-badge&logo=junit5&logoColor=white" },
-    { name: "Spring Security", badgeLink: "https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring-security&logoColor=white" },
-    { name: "Agile Methodologies", badgeLink: "https://img.shields.io/badge/Agile-003366?style=for-the-badge&logo=agile&logoColor=white" }
-  ];
+    { id: 0, name: "JavaScript", badgeLink: "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" },
+    { id: 1, name: "TypeScript", badgeLink: "https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" },
+    { id: 2, name: "React", badgeLink: "https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" },
+    { id: 3, name: "Redux", badgeLink: "https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white" },
+    { id: 4, name: "React Hooks", badgeLink: "https://img.shields.io/badge/React_Hooks-61DAFB?style=for-the-badge&logo=react&logoColor=black" },
+    { id: 5, name: "Git", badgeLink: "https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" },
+    { id: 6, name: "HTML", badgeLink: "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" },
+    { id: 7, name: "CSS", badgeLink: "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" },
+    { id: 8, name: "Tailwind CSS", badgeLink: "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" },
+    { id: 9, name: "Unit Testing", badgeLink: "https://img.shields.io/badge/Testing-Jest-C21325?style=for-the-badge&logo=jest&logoColor=white" },
+    { id: 10, name: "Python", badgeLink: "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" },
+    { id: 11, name: "Object-Oriented Programming (OOP)", badgeLink: "https://img.shields.io/badge/OOP-1D1D1D?style=for-the-badge&logo=oop&logoColor=white" },
+    { id: 12, name: "Docker", badgeLink: "https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" },
+    { id: 13, name: "MySQL", badgeLink: "https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" },
+    { id: 14, name: "Node.js", badgeLink: "https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node-dot-js&logoColor=white" },
+    { id: 15, name: "Express", badgeLink: "https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" },
+    { id: 16, name: "Integration Testing", badgeLink: "https://img.shields.io/badge/Integration_Testing-6DB33F?style=for-the-badge&logo=testing&logoColor=white" },
+    { id: 17, name: "REST", badgeLink: "https://img.shields.io/badge/REST-008080?style=for-the-badge&logo=rest&logoColor=white" },
+    { id: 18, name: "JSON Web Token (JWT)", badgeLink: "https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white" },
+    { id: 19, name: "ORM (Sequelize)", badgeLink: "https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=sequelize&logoColor=white" },
+    { id: 20, name: "Java", badgeLink: "https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=coffeescript&logoColor=white" },
+    { id: 21, name: "Maven", badgeLink: "https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white" },
+    { id: 22, name: "Spring", badgeLink: "https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" },
+    { id: 23, name: "Spring Boot", badgeLink: "https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" },
+    { id: 24, name: "Spring Data JPA", badgeLink: "https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white" },
+    { id: 25, name: "JUnit 5", badgeLink: "https://img.shields.io/badge/JUnit_5-25A162?style=for-the-badge&logo=junit5&logoColor=white" },
+    { id: 26, name: "Spring Security", badgeLink: "https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring-security&logoColor=white" },
+    { id: 27, name: "Agile Methodologies", badgeLink: "https://img.shields.io/badge/Agile-003366?style=for-the-badge&logo=agile&logoColor=white" }
+];
   
 
 const aboutMeText = [ `

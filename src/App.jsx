@@ -14,13 +14,9 @@ function App() {
   return (
     <>
       <Heading content={content} setContent={setContent} />  
-      <HorizontalDivider />
       <AboutMe content={content} />
-      <HorizontalDivider />  
-      <Skills content={content} />
-      <HorizontalDivider />  
+      <Skills content={content} /> 
       <Works content={content} />
-      <HorizontalDivider />
       <Contact content={content} />
     </>
   )
