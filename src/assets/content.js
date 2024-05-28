@@ -1,17 +1,36 @@
 //List of Srcs for images of works
 const srcs = ["https://live.staticflickr.com/65535/53724012970_054b3fc38a_b.jpg"]
 
+//List of skills used in works
+const skills = [[1, 2, 4, 6, 7, 9, 14]]
+
 const listOfWorksPtBr = [ {
     title: "App de Receitas",
     src: srcs[0],
-    description: "Uma aplicação front-end que consome dados de uma API pública, permitindo aos usuários pesquisar e armazenar receitas culinárias. Os usuários podem favoritar e compartilhar receitas. A aplicação inclui páginas para login, seguir receitas, favoritar receitas, receitas concluídas e mais."
-}];
+    description: "Uma aplicação front-end que consome dados de uma API pública, permitindo aos usuários pesquisar e armazenar receitas culinárias. Os usuários podem favoritar e compartilhar receitas. A aplicação inclui páginas para login, seguir receitas, favoritar receitas, receitas concluídas e mais.",
+    skills: skills[0]
+},
+{
+    title: "App de Receitas2",
+    src: srcs[0],
+    description: "Uma aplicação front-end que consome dados de uma API pública, permitindo aos usuários pesquisar e armazenar receitas culinárias. Os usuários podem favoritar e compartilhar receitas. A aplicação inclui páginas para login, seguir receitas, favoritar receitas, receitas concluídas e mais.",
+    skills: []
+}
+];
 
 const listOfWorks = [ {
     title: "Recipes App",
     src: srcs[0],
-    description: "A front-end application that consumes data from a public API, allowing users to search for and store culinary recipes. Users can favorite and share recipes. The application includes pages for logging in, following recipes, favoriting recipes, completed recipes, and more."
-}];
+    description: "A front-end application that consumes data from a public API, allowing users to search for and store culinary recipes. Users can favorite and share recipes. The application includes pages for logging in, following recipes, favoriting recipes, completed recipes, and more.",
+    skills: skills[0]
+},
+{
+    title: "Recipes App2",
+    src: srcs[0],
+    description: "A front-end application that consumes data from a public API, allowing users to search for and store culinary recipes. Users can favorite and share recipes. The application includes pages for logging in, following recipes, favoriting recipes, completed recipes, and more.",
+    skills: [] 
+}
+];
 
 const listOfSkills = [
     { id: 0, name: "JavaScript", badgeLink: "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" },
@@ -43,6 +62,19 @@ const listOfSkills = [
     { id: 26, name: "Spring Security", badgeLink: "https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring-security&logoColor=white" },
     { id: 27, name: "Agile Methodologies", badgeLink: "https://img.shields.io/badge/Agile-003366?style=for-the-badge&logo=agile&logoColor=white" }
 ];
+
+function changeBadgeStyle(skill) {
+    const newSkill = skill;
+    newSkill.badgeLink = skill.badgeLink.replace("for-the-badge", "flat-square");
+    return newSkill;
+}
+
+//Filters based on an array of ids and changes the badge style to flat-square
+function filterAndChangeBadgeStyle(ids) {
+    return listOfSkills
+        .filter(skill => ids.includes(skill.id))
+        .map(skill => changeBadgeStyle(skill)); 
+}
   
 
 const aboutMeText = [ `
@@ -84,4 +116,4 @@ const EnglishContent = {
 };
 
 
-export { PortugueseContent, EnglishContent };
+export { PortugueseContent, EnglishContent, filterAndChangeBadgeStyle };

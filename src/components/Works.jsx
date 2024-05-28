@@ -10,18 +10,19 @@ Works.propTypes = {
 export function Works({content}) {
     return (
       <>
-        <motion.div
-          whileHover={{ scale: 1.05 }} 
+        <div
           className="flex flex-col items-center">
-          <div className="text-3xl font-bold m-2 text-brand-1">
+          <motion.div
+            whileHover={{ scale: 1.2 }} 
+            className="text-3xl font-bold m-2 text-brand-1">
             {content.works}
-          </div>
-          {content.listOfWorks.map((work, index) => (
-            <div key={index} className="flex">
-              <WorkCard work={work} />
-            </div>
+          </motion.div>
+          <div className="flex flex-wrap justify-center">
+          {content.listOfWorks.map((work, index) => (            
+            <WorkCard key={index} work={work} />
           ))}
-        </motion.div>
+          </div>
+        </div>
         <HorizontalDivider />
       </>
     )
