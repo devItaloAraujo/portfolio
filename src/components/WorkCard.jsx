@@ -18,7 +18,7 @@ export function WorkCard({work}) {
         <div className="inline-block flex items-center overflow-hidden rounded-lg">
             <img src={work.src} alt={work.title+"-pic"} />
         </div> 
-        <div className="text-l m-2">
+        <div className="text-l m-2 text-white text-opacity-75">
           {work.description}
         </div>
         <div

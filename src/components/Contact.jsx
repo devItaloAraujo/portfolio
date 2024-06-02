@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import { motion } from 'framer-motion'
+import { ContactForm } from './ContactForm'
 
 Contact.propTypes = {
     content: PropTypes.object.isRequired
@@ -15,11 +16,12 @@ export function Contact({content}) {
           <div className="text-3xl font-bold m-2 text-brand-1">
             {content.contact}
           </div>
-          <div 
+          {/* <div 
             className="text-xl m-2"
           >
             {content.contactText}
-          </div>     
+          </div>      */}
+          <ContactForm formId="xqkwzqzj" content={content}/>
         </motion.div>
       </>
     )

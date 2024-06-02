@@ -60,8 +60,9 @@ const listOfSkills = [
     { id: 24, name: "Spring Data JPA", badgeLink: "https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white" },
     { id: 25, name: "JUnit 5", badgeLink: "https://img.shields.io/badge/JUnit_5-25A162?style=for-the-badge&logo=junit5&logoColor=white" },
     { id: 26, name: "Spring Security", badgeLink: "https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring-security&logoColor=white" },
-    { id: 27, name: "Agile Methodologies", badgeLink: "https://img.shields.io/badge/Agile-003366?style=for-the-badge&logo=agile&logoColor=white" }
-];
+    { id: 27, name: "Agile Methodologies", badgeLink: "https://img.shields.io/badge/Agile-003366?style=for-the-badge&logo=agile&logoColor=white" },
+    { id: 28, name: "GPT", badgeLink: "https://img.shields.io/badge/GPT-8B0000?style=for-the-badge&logo=openai&logoColor=white"}
+    ]
 
 function changeBadgeStyle(skill) {
     const newSkill = skill;
@@ -91,6 +92,32 @@ const aboutMeText = [ `
 <p>I am ready to collaborate with you and turn your ideas into reality. Let's build something amazing together!</p>`
 ];
 
+const formContent = [
+    {   placeHolderName: "Nome",
+        nameRequired: "Por favor, insira seu nome",
+        placeHolderEmail: "Email",
+        invalidEmail: "Endereço de email inválido",
+        emailRequired: "Por favor, insira seu email",
+        placeHolderMessage: "Mensagem",
+        messageRequired: "Por favor, insira uma mensagem",
+        messageSucess: "Mensagem enviada com sucesso!",
+        messageProblem: "Houve um problema ao enviar sua mensagem. Por favor, tente novamente mais tarde.",
+        sending: "Enviando...",
+        send: "Enviar"
+    },  
+    {   placeHolderName: "Name",
+        nameRequired: "Please enter your name",
+        placeHolderEmail: "Email",
+        invalidEmail: "Invalid email address",
+        emailRequired: "Please enter your email",
+        placeHolderMessage: "Message",
+        messageRequired: "Please enter a message",
+        messageSucess: "Message sent successfully!",
+        messageProblem: "There was a problem sending your message. Please try again later.",
+        sending: "Sending...",
+        send: "Send"},
+]
+
 const PortugueseContent = {
     heading: "Ítalo Araújo",
     aboutMe: "Sobre mim",
@@ -101,6 +128,7 @@ const PortugueseContent = {
     listOfWorks: listOfWorksPtBr,
     contact: "Contato",
     contactText: "Entre em contato comigo! Telefone: (31) 99538 - 5299",
+    formContent: formContent[0]
 };
 
 const EnglishContent = {
@@ -113,6 +141,7 @@ const EnglishContent = {
     listOfWorks: listOfWorks,
     contact: "Contact",
     contactText: "Get in touch with me! Phone: +55 (31) 99538 - 5299",
+    formContent: formContent[1]
 };
 
 

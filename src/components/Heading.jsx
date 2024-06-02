@@ -22,7 +22,7 @@ export function Heading ({content, setContent}) {
           className="logo text-xl font-bold m-2 flex-item self-start">
           {content.heading}
         </motion.div>
-        <div className="">
+        <div className="text-white text-opacity-75">
           <button onClick={() => setContent(PortugueseContent)}>
             Português
           </button>

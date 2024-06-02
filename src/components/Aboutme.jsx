@@ -31,7 +31,7 @@ export function AboutMe({content}) {
             </div>
             <div
               dangerouslySetInnerHTML={{ __html: content.aboutMeText }}
-              className="text-xl m-2">
+              className="text-xl m-2 text-white text-opacity-75">
             </div>
           </motion.div>
         </motion.div>
