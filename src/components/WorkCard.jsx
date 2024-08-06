@@ -10,7 +10,7 @@ export function WorkCard({work}) {
     return (
       <motion.div
         whileHover={{ scale: 1.05 }}
-        className="flex flex-col bg-second-blue rounded-lg items-center px-2 max-w-xl m-4"
+        className="flex flex-col bg-second-blue rounded-lg items-center px-2 max-w-full m-4"
       >   
         <div className="text-xl font-bold m-2 text-brand-2">
           {work.title}

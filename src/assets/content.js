@@ -61,7 +61,12 @@ const listOfSkills = [
     { id: 25, name: "JUnit 5", badgeLink: "https://img.shields.io/badge/JUnit_5-25A162?style=for-the-badge&logo=junit5&logoColor=white" },
     { id: 26, name: "Spring Security", badgeLink: "https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring-security&logoColor=white" },
     { id: 27, name: "Agile Methodologies", badgeLink: "https://img.shields.io/badge/Agile-003366?style=for-the-badge&logo=agile&logoColor=white" },
-    { id: 28, name: "GPT", badgeLink: "https://img.shields.io/badge/GPT-8B0000?style=for-the-badge&logo=openai&logoColor=white"}
+    { id: 28, name: "GPT", badgeLink: "https://img.shields.io/badge/GPT-8B0000?style=for-the-badge&logo=openai&logoColor=white"},
+    { 
+        id: 29, 
+        name: "Styled-Components", 
+        badgeLink: "https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" 
+    }
     ]
 
 function changeBadgeStyle(skill) {

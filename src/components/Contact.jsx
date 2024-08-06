@@ -15,13 +15,13 @@ export function Contact({content}) {
         >
           <div className="text-3xl font-bold m-2 text-brand-1">
             {content.contact}
-          </div>
-          {/* <div 
-            className="text-xl m-2"
+          </div>    
+          <ContactForm formId="xqkwzqzj" content={content}/>
+          <div 
+            className="text-xl m-2 text-white"
           >
             {content.contactText}
-          </div>      */}
-          <ContactForm formId="xqkwzqzj" content={content}/>
+          </div> 
         </motion.div>
       </>
     )
