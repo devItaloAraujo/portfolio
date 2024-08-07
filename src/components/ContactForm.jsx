@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { motion } from 'framer-motion';
 import axios from 'axios';
+import { IoIosSend } from "react-icons/io";
 
 
 ContactForm.propTypes = {
@@ -92,8 +93,13 @@ export function ContactForm({ formId, content }) {
                         {isSubmitting && <p className="text-blue-500">{formContent.sending}</p>}
                         {status && status.error && <p className="text-red-500">{status.error}</p>}
                         {status && status.success && <p className="text-green-500">{status.success}</p>}
-                        <button type="submit" className={`w-full px-3 py-2 bg-blue-500 text-white rounded ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`} disabled={isSubmitting}>
+                        <button 
+                            type="submit"  
+                            className={`flex justify-around items-center w-full px-3 py-2 bg-first-blue text-white rounded-lg ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`} 
+                            disabled={isSubmitting}
+                        >
                             {formContent.send}
+                            <IoIosSend size={'2em'}/>
                         </button>
                     </Form>
                 </motion.div>

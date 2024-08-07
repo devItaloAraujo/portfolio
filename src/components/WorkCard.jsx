@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 import { filterAndChangeBadgeStyle } from '../assets/content'
 import { motion } from 'framer-motion'
+import { VscGithub } from 'react-icons/vsc'
+import { TbWorld } from "react-icons/tb";
 
 WorkCard.propTypes = {
     work: PropTypes.object.isRequired
@@ -27,7 +29,35 @@ export function WorkCard({work}) {
         { filterAndChangeBadgeStyle(work.skills).map((skill) => (
             <img key={skill.id} src={skill.badgeLink} alt={skill.name} className="m-1" />
         ))}        
-        </div>    
+        </div>
+        <button
+          className="bg-first-blue text-white rounded-lg p-2 m-2 w-[300px]"
+        >
+          <a
+            href={work.links[0]}
+            target="_blank"
+            rel="noreferrer"
+            className='flex justify-around items-center'
+          >
+            GitHub
+           <VscGithub size={'2em'} />
+          </a>
+        </button>
+        {work.links[1] &&
+        <button
+          className="bg-first-blue text-white rounded-lg p-2 m-2 w-[300px]"
+        >
+          <a
+            href={work.links[1]}
+            target="_blank"
+            rel="noreferrer"
+            className='flex justify-around items-center'
+          >
+            WebSite
+            <TbWorld size={'2em'}/>
+          </a>  
+        </button>
+        }
       </motion.div>
     )
 }
