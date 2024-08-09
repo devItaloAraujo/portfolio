@@ -41,6 +41,11 @@ const listOfSkills = [
         name: "Vite", 
         badgeLink: "https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" 
     },
+    { 
+        id: 31, 
+        name: "PostgreSQL", 
+        badgeLink: "https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" 
+    }    
     ];
     
 

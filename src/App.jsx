@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { EnglishContent } from './assets/content'
+import { PortugueseContent } from './assets/content'
 import { Heading } from './components/Heading'
 import { AboutMe } from './components/Aboutme'
 import { Projects } from './components/Projects'
@@ -8,7 +8,7 @@ import { Contact } from './components/Contact'
 import { Skills } from './components/Skills'
 
 function App() {
-  const [content, setContent] = useState(EnglishContent)
+  const [content, setContent] = useState(PortugueseContent)
 
   return (
     <>
