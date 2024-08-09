@@ -35,8 +35,14 @@ const listOfSkills = [
         id: 29, 
         name: "Styled-Components", 
         badgeLink: "https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" 
-    }
-    ]
+    },
+    { 
+        id: 30, 
+        name: "Vite", 
+        badgeLink: "https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" 
+    },
+    ];
+    
 
 function changeBadgeStyle(skill) {
     const newSkill = skill;

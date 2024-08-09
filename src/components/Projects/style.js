@@ -12,6 +12,7 @@ export const SwiperContainer = styled.div`
   } 
   .swiper-button-prev,
   .swiper-button-next {
+    top: 40%;
     scale: 1.2;
     font-weight: 900;    
     background-image: linear-gradient(to bottom, #127890, #eaecc6);

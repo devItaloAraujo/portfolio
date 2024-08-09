@@ -1,23 +1,26 @@
 //List of Srcs for images of works in order
 const srcs = [
     "https://github.com/user-attachments/assets/0658c051-31d3-405e-be8f-ac45b179d7b4",
-    "https://raw.githubusercontent.com/devItaloAraujo/api-back-end-java-mysql-farms-manager/5269635fc50bb8c7ade589ed0c4e81370276a806/Captura%20de%20tela%20de%202024-08-07%2015-10-45.png"
+    "https://raw.githubusercontent.com/devItaloAraujo/api-back-end-java-mysql-farms-manager/5269635fc50bb8c7ade589ed0c4e81370276a806/Captura%20de%20tela%20de%202024-08-07%2015-10-45.png",
+    "https://raw.githubusercontent.com/devItaloAraujo/landingPagePsychologist/main/overview.png"
 ]
 
 //List of skills used in works in order
 const skills = [
     [1, 2, 4, 6, 7, 9, 14],
-    [20, 23, 24, 13, 12, 21]
+    [20, 23, 24, 13, 12, 21],
+    [2, 8, 12, 29, 30]
 ]
 
 //List of links to github repositories in order
 const githubLinks = [
     "https://github.com/devItaloAraujo/project-app-de-receitas",
-    "https://github.com/devItaloAraujo/api-back-end-java-mysql-farms-manager"
+    "https://github.com/devItaloAraujo/api-back-end-java-mysql-farms-manager",
+    "https://github.com/devItaloAraujo/landingPagePsychologist"
 ]
 
 //List of links to deployed projects that have them
-const deployedLinks = ["https://google.com"]
+const deployedLinks = ["https://psicologathatiaraujo.fly.dev/"]
 
 //List of Projects in portuguese
 const listOfWorksPtBr = [
@@ -27,7 +30,7 @@ const listOfWorksPtBr = [
         src: srcs[0],
         description: "Uma aplicação front-end que consome dados de uma API pública, permitindo aos usuários pesquisar e armazenar receitas culinárias. Os usuários podem favoritar e compartilhar receitas. A aplicação inclui páginas para login, seguir receitas, favoritar receitas, receitas concluídas e mais.",
         skills: skills[0],
-        links: [githubLinks[0], deployedLinks[0]]
+        links: [githubLinks[0]]
     },
     {
         id: 1,
@@ -40,10 +43,10 @@ const listOfWorksPtBr = [
     {
         id: 2,
         title: "Website para Psicóloga autônoma",
-        src: srcs[0],
-        description: "placeholder",
-        skills: [],
-        links: []
+        src: srcs[2],
+        description: "Este projeto é uma landing page para uma psicóloga, construída utilizando React e Vite.",
+        skills: skills[2],
+        links: [githubLinks[2], deployedLinks[0]]
     },
     {
         id: 3,
@@ -111,7 +114,7 @@ const listOfWorks = [
         src: srcs[0],
         description: "A front-end application that consumes data from a public API, allowing users to search for and store culinary recipes. Users can favorite and share recipes. The application includes pages for logging in, following recipes, favoriting recipes, completed recipes, and more.",
         skills: skills[0],
-        links: [githubLinks[0], deployedLinks[0]]
+        links: [githubLinks[0]]
     },
     {
         id: 1,
@@ -124,10 +127,10 @@ const listOfWorks = [
     {
         id: 2,
         title: "Website for Independent Psychologist",
-        src: srcs[0],
-        description: "placeholder",
-        skills: [],
-        links: []
+        src: srcs[2],
+        description: "This project is a landing page for a psychologist, built using React and Vite.",
+        skills: skills[2],
+        links: [githubLinks[2], deployedLinks[0]]
     },
     {
         id: 3,
