@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { PortugueseContent } from './assets/content'
-import { Heading } from './components/Heading'
+import { Heading } from './components/Header/Heading'
 import { AboutMe } from './components/Aboutme'
 import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
