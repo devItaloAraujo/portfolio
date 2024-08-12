@@ -13,6 +13,8 @@ Projects.propTypes = {
     content: PropTypes.object.isRequired
 }
 
+const workShownOrder = [3, 2, 1, 0];
+
 export function Projects({content}) {
 
   return (
@@ -34,10 +36,10 @@ export function Projects({content}) {
             mousewheel={true}
             grabCursor={true}
             loop={true}
-          >
-            {content.listOfWorks.map((work, index) => (  
-              <SwiperSlide key={index}>
-                <WorkCard work={work} />
+          >            
+            {workShownOrder.map((id) => (  
+              <SwiperSlide key={id}>
+                <WorkCard work={content.listOfWorks[id]} />
               </SwiperSlide>          
             ))}
           </Swiper>
