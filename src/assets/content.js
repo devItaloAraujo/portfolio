@@ -55,11 +55,11 @@ function changeBadgeStyle(skill) {
     return newSkill;
 }
 
-//Filters based on an array of ids and changes the badge style to flat-square
+// Filters based on an array of ids and changes the badge style to flat-square, the result follows the order of the array "ids"
 function filterAndChangeBadgeStyle(ids) {
-    return listOfSkills
-        .filter(skill => ids.includes(skill.id))
-        .map(skill => changeBadgeStyle(skill)); 
+    const filteredSkills = listOfSkills.filter(skill => ids.includes(skill.id));
+    const result = ids.map(id => filteredSkills.find(skill => skill.id === id));
+    return result.map(skill => changeBadgeStyle(skill));
 }
   
 
@@ -83,6 +83,8 @@ const formContent = [
         placeHolderEmail: "Email",
         invalidEmail: "Endereço de email inválido",
         emailRequired: "Por favor, insira seu email",
+        placeHolderWhatsapp: "Telefone",
+        whatsappRequired: "Por favor, insira seu número de telefone",
         placeHolderMessage: "Mensagem",
         messageRequired: "Por favor, insira uma mensagem",
         messageSucess: "Mensagem enviada com sucesso!",
@@ -95,6 +97,8 @@ const formContent = [
         placeHolderEmail: "Email",
         invalidEmail: "Invalid email address",
         emailRequired: "Please enter your email",
+        placeHolderWhatsapp: "Phone",
+        whatsappRequired: "Please enter your phone number",
         placeHolderMessage: "Message",
         messageRequired: "Please enter a message",
         messageSucess: "Message sent successfully!",

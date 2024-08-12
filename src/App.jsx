@@ -4,7 +4,7 @@ import { PortugueseContent } from './assets/content'
 import { Heading } from './components/Header/Heading'
 import { AboutMe } from './components/Aboutme'
 import { Projects } from './components/Projects'
-import { Contact } from './components/Contact'
+import { Contact } from './components/Contact/'
 import { Skills } from './components/Skills'
 
 function App() {

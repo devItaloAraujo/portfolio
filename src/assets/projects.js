@@ -27,7 +27,7 @@ const commonDataList = [
     },
     {
         id: 1,
-        skills: [14, 20, 23, 24, 13, 12, 21],
+        skills: [20, 21, 23, 24, 13, 12],
         links: [githubLinks[1]],
         src: srcs[1]
     },
@@ -39,7 +39,7 @@ const commonDataList = [
     },
     {
         id: 3,
-        skills: [14, 0, 2, 8, 7, 30, 12, 20, 23, 24, 31, 25, 16],
+        skills: [14, 0, 2, 8, 7, 30, 12, 20, 21, 23, 24, 31, 25, 16],
         links: [githubLinks[3]],
         src: srcs[3]
     }

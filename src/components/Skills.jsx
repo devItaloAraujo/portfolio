@@ -11,7 +11,7 @@ export function Skills({content}) {
       <>
         <motion.div 
           whileHover={{ scale: 1.05 }}
-          className="flex flex-col items-center">
+          className="flex flex-col items-center p-5">
           <div className="text-3xl font-bold m-2 text-brand-1">
             {content.skills}
           </div>
