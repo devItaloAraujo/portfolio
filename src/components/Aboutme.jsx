@@ -18,7 +18,7 @@ export function AboutMe({content}) {
             animate={{ scale: [1, 1.05, 1] }}
             transition={{ duration: 1  }}
             whileHover={{ scale: 1.05 }}
-            className="flex mb-[20px] mt-[30px] w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] overflow-hidden rounded-full shadow-2xl border-4 border-solid border-[#FFFFF0] "
+            className="flex mx-[20px] mb-[20px] mt-[30px] w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] overflow-hidden rounded-full shadow-2xl border-4 border-solid border-[#FFFFF0] "
             src={linkDaFoto}
          >
           </motion.img>

@@ -13,7 +13,7 @@ export function Heading ({content, setContent}) {
 
     return (
       <div
-        className="bg-gradient-to-t from-brand-2 to-first-blue container flex items-center justify-between"
+        className="bg-gradient-to-t from-brand-2 to-first-blue flex items-center justify-between"
       >
         <motion.img
           animate={{ scale: [1, 1.05, 1] }}
