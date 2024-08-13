@@ -10,15 +10,14 @@ WorkCard.propTypes = {
 
 export function WorkCard({work}) {
     return (
-      <motion.div
-        whileHover={{ scale: 1.05 }}
-        className="flex flex-col bg-second-blue rounded-lg items-center px-2 max-w-full m-4"
+      <div
+        className="flex flex-col bg-second-blue rounded-lg items-center px-2 max-w-full mx-4"
       >   
         <div className="text-xl font-bold m-2 text-brand-2">
           {work.title}
         </div>
         <div className="inline-block flex items-center overflow-hidden rounded-lg">
-            <img src={work.src} alt={work.title+"-pic"} />
+            <img src={work.src} alt={work.title+"-pic"} className='max-h-[350px] sm:max-h-[500px]'/>
         </div> 
         <div className="text-l m-2 text-white text-opacity-75">
           {work.description}
@@ -58,6 +57,6 @@ export function WorkCard({work}) {
           </a>  
         </button>
         }
-      </motion.div>
+      </div>
     )
 }

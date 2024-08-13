@@ -6,10 +6,11 @@ export const SwiperContainer = styled.div`
   width: 100%;
 
   .swiper-slide {
-    height: 100% !important;
+    max-height: 100% !important;
     margin: 10px 0;
     width: 100%;
-  } 
+  }
+  
   .swiper-button-prev,
   .swiper-button-next {
     top: 40%;

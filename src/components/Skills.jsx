@@ -17,14 +17,21 @@ export function Skills({content}) {
           </div>
           <div className="flex flex-wrap justify-center">
             {content.listOfSkills.map((skill, index) => (
-              <motion.img
+              <motion.a
                 key={index}
-                src={skill.badgeLink}
-                alt={skill.name}
+                href={`https://www.google.com/search?q=${encodeURIComponent(skill.name)}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="my-5 mx-10"
                 initial={{ scale: 1.5 }}
                 whileHover={{ scale: 1.7 }}
-                transition={{ duration: 0.2 }} />
+                transition={{ duration: 0.2 }}
+              >
+                <img
+                  src={skill.badgeLink}
+                  alt={skill.name}
+                />
+              </motion.a>
             ))}
           </div>
       </motion.div>

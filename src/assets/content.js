@@ -62,19 +62,25 @@ function filterAndChangeBadgeStyle(ids) {
     return result.map(skill => changeBadgeStyle(skill));
 }
   
-
 const aboutMeText = [ `
-<p>Olá! Meu nome é Ítalo e sou um <span class="text-xl font-bold text-brand-2">desenvolvedor web</span> full stack. Com uma formação abrangente e certificada, adquiri habilidades robustas tanto em front-end quanto em back-end.</p>
-
-<p>Minha abordagem é sempre focada na entrega de código limpo e eficiente, buscando continuamente aprender e aplicar as melhores práticas da indústria. Estou sempre pronto para enfrentar novos desafios e colaborar em projetos que exijam tanto criatividade quanto precisão técnica.</p>
-
-<p>Estou pronto para colaborar com você e transformar suas ideias em realidade. Vamos construir algo incrível juntos!</p>
+<div>
+    Olá! Meu nome é Ítalo Araújo e sou graduado em Engenharia Química pela PUC-MG e pela University of Maryland (EUA). Também sou formado em Desenvolvimento Web FullStack pela Trybe.
+    <p>Sou apaixonado por resolver problemas, criar ferramentas úteis, intuitivas e agradáveis de usar. Estou sempre pronto para aprender e me desenvolver.
+        Tenho conhecimento e experiência na construção de soluções web completas, desde o front-end até o back-end, utilizando as melhores práticas do mercado.
+    </p>
+    <p> Já superei desafios em diversas situações e com diferentes pessoas, assim, estou sempre aberto à comunicação e ao trabalho em equipe.</p>
+    <p> Vamos construir algo incrível juntos! Entre em contato. </p>
+</div>
 `,
-`<p>Hello! My name is Ítalo and I am a full stack <span class="text-xl font-bold text-brand-2"> web developer</span>. With a comprehensive and certified background, I have acquired strong skills in both front-end and back-end development.</p>
-
-<p>My approach is always focused on delivering clean and efficient code, continuously seeking to learn and apply the best industry practices. I am always ready to take on new challenges and collaborate on projects that require both creativity and technical precision.</p>
-
-<p>I am ready to collaborate with you and turn your ideas into reality. Let's build something amazing together!</p>`
+`<div>
+    Hello! My name is Ítalo Araújo, and I have a degree in Chemical Engineering from PUC-MG and the University of Maryland (USA). I also graduated in FullStack Web Development from Trybe.
+    <p>I am passionate about solving problems and creating useful, intuitive, and enjoyable tools. I am always ready to learn and grow.
+        I have knowledge and experience in building complete web solutions, from front-end to back-end, using the best practices in the industry.
+    </p>
+    <p> I have overcome challenges in various situations and with different people, so I am always open to communication and teamwork.</p>
+    <p> Let's build something amazing together! Get in touch. </p>
+</div>
+`
 ];
 
 const formContent = [
@@ -109,27 +115,36 @@ const formContent = [
 
 const PortugueseContent = {
     heading: "Ítalo Araújo",
-    aboutMe: "Sobre mim",
+    aboutMe: `<div>
+    <p>Engenheiro</p>
+    <p>Desenvolvolvedor Web</p>
+    <p>Full Stack</p>
+    </div>`,
     aboutMeText: aboutMeText[0],
     skills: "Habilidades",
     listOfSkills: listOfSkills,
     works: "Trabalhos",
     listOfWorks: listOfWorksPtBr,
     contact: "Contato",
-    contactText: "Entre em contato comigo! Telefone: (31) 99538 - 5299",
+    contactText: `<div>Entre em contato comigo! <p>Telefone: (31) 99538 - 5299</p></div>`,
     formContent: formContent[0]
 };
 
 const EnglishContent = {
     heading: "Italo Araujo",
-    aboutMe: "About me",
+    aboutMe: `<div>
+    <p>Full Stack</p>
+    <p>Web Developer</p>
+    <p>Engineer</p>
+    </div>
+    `,
     aboutMeText: aboutMeText[1],
     skills: "Skills",
     listOfSkills: listOfSkills,
     works: "Works",
     listOfWorks: listOfWorks,
     contact: "Contact",
-    contactText: "Get in touch with me! Phone: +55 (31) 99538 - 5299",
+    contactText: `<div>Get in touch with me! <p>Phone: +55 (31) 99538 - 5299</p></div>`,
     formContent: formContent[1]
 };
 
