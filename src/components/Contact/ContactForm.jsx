@@ -38,7 +38,7 @@ export function ContactForm({ formId, content }) {
                 },
             });
 
-            setStatus({ success: formContent.messageSucess });
+            setStatus({ success: formContent.messageSuccess });
             resetForm();
         } catch (error) {
             setStatus({ error: formContent.messageProblem });

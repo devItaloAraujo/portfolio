@@ -93,7 +93,7 @@ const formContent = [
         whatsappRequired: "Por favor, insira seu número de telefone",
         placeHolderMessage: "Mensagem",
         messageRequired: "Por favor, insira uma mensagem",
-        messageSucess: "Mensagem enviada com sucesso!",
+        messageSuccess: "Mensagem enviada com sucesso!",
         messageProblem: "Houve um problema ao enviar sua mensagem. Por favor, tente novamente mais tarde.",
         sending: "Enviando...",
         send: "Enviar"
@@ -107,7 +107,7 @@ const formContent = [
         whatsappRequired: "Please enter your phone number",
         placeHolderMessage: "Message",
         messageRequired: "Please enter a message",
-        messageSucess: "Message sent successfully!",
+        messageSuccess: "Message sent successfully!",
         messageProblem: "There was a problem sending your message. Please try again later.",
         sending: "Sending...",
         send: "Send"},
