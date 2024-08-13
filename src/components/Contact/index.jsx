@@ -17,7 +17,7 @@ export function Contact({content}) {
           <div className="text-3xl font-bold m-2 text-brand-1" id="contact">
             {content.contact}
           </div>    
-          <ContactForm formId="xqkwzqzj" content={content}/>
+          <ContactForm formId="mblrybvn" content={content}/>
           <div 
             dangerouslySetInnerHTML={{ __html: content.contactText }}
             className="text-xl m-2 text-first-blue"
