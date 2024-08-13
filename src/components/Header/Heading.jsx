@@ -7,7 +7,7 @@ Heading.propTypes = {
     setContent: PropTypes.func.isRequired
 }
 
-const linkToLogo = 'src/assets/logoeditada.png'
+const linkToLogo = '/logoeditada.png'
 
 export function Heading ({content, setContent}) {
 

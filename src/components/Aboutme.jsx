@@ -6,7 +6,7 @@ AboutMe.propTypes = {
     content: PropTypes.object.isRequired
 }
 
-const linkDaFoto = 'src/assets/profilepicAvatarAi.png'
+const linkDaFoto = '/profilepicAvatarAi.png'
 
 export function AboutMe({content}) {
     return (
