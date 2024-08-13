@@ -14,19 +14,18 @@ export function ContactForm({ formId, content }) {
 
     const { formContent } = content;
 
-    // ADICIONAR <<<------ WHASTSAPP
     const initialValues = {
         name: '',
         email: '',
         message: '',
-        whatsapp: '', 
+        phone: '', 
     };
 
     const validationSchema = Yup.object({
         name: Yup.string().required(formContent.nameRequired),
         email: Yup.string().email(formContent.invalidEmail).required(formContent.emailRequired),
         message: Yup.string().required(formContent.messageRequired),
-        whatsapp: Yup.string().required(formContent.whatsappRequired),
+        phone: Yup.string().required(formContent.phoneRequired),
     });
 
     const handleSubmit = async (values, { setSubmitting, resetForm, setStatus }) => {
@@ -82,15 +81,15 @@ export function ContactForm({ formId, content }) {
                             <ErrorMessage name="email" component="div" className="text-red-500" />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="whatsapp" className="block text-gray-700">WhatsApp</label>
+                            <label htmlFor="phone" className="block text-gray-700">Phone</label>
                             <Field
                                 type="text"
-                                name="whatsapp"
-                                id="whatsapp"
-                                placeholder={formContent.placeHolderWhatsapp}
+                                name="phone"
+                                id="phone"
+                                placeholder={formContent.placeHolderPhone}
                                 className="w-full px-3 py-2 border rounded"
                             />
-                            <ErrorMessage name="whatsapp" component="div" className="text-red-500" />
+                            <ErrorMessage name="phone" component="div" className="text-red-500" />
                         </div>
                         <div className="mb-4">
                             <label htmlFor="message" className="block text-gray-700">Message</label>

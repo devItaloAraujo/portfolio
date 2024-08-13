@@ -25,11 +25,11 @@ export function AboutMe({content}) {
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
-            className="flex flex-col justify-center items-center"
+            className="flex flex-col justify-center items-center mx-[20px]"
           >
             <div 
               dangerouslySetInnerHTML={{ __html: content.aboutMe }}
-              className="text-3xl font-bold m-2 text-brand-1">
+              className="text-3xl font-bold m-2 text-first-blue">
             </div>
           </motion.div>
           <div

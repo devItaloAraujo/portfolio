@@ -89,8 +89,8 @@ const formContent = [
         placeHolderEmail: "Email",
         invalidEmail: "Endereço de email inválido",
         emailRequired: "Por favor, insira seu email",
-        placeHolderWhatsapp: "Telefone",
-        whatsappRequired: "Por favor, insira seu número de telefone",
+        placeHolderPhone: "Telefone",
+        phoneRequired: "Por favor, insira seu número de telefone",
         placeHolderMessage: "Mensagem",
         messageRequired: "Por favor, insira uma mensagem",
         messageSuccess: "Mensagem enviada com sucesso!",
@@ -103,8 +103,8 @@ const formContent = [
         placeHolderEmail: "Email",
         invalidEmail: "Invalid email address",
         emailRequired: "Please enter your email",
-        placeHolderWhatsapp: "Phone",
-        whatsappRequired: "Please enter your phone number",
+        placeHolderPhone: "Phone",
+        phoneRequired: "Please enter your phone number",
         placeHolderMessage: "Message",
         messageRequired: "Please enter a message",
         messageSuccess: "Message sent successfully!",
@@ -133,7 +133,7 @@ const PortugueseContent = {
 const EnglishContent = {
     heading: "Italo Araujo",
     aboutMe: `<div>
-    <p>Full Stack</p>
+    <p>Full-Stack</p>
     <p>Web Developer</p>
     <p>Engineer</p>
     </div>
