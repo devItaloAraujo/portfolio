@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const SwiperContainer = styled.div`
   display: flex;
   width: 100%;
+  max-width: 1000px;
 
   .swiper-slide {
     max-height: 100% !important;
