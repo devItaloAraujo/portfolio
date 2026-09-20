@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Build baixado do site no ar, usado para recuperar o fonte da v14
+site-no-ar

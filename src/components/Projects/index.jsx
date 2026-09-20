@@ -1,51 +1,55 @@
-import { SwiperContainer } from './style'
-import 'swiper/css/bundle';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules'
-
 import PropTypes from 'prop-types'
-import { WorkCard } from '../WorkCard'
-import { HorizontalDivider } from '../Horizontal'
 import { motion } from 'framer-motion'
-
+import { FolderKanban } from 'lucide-react'
+import { WorkCard } from '../WorkCard'
 
 Projects.propTypes = {
-    content: PropTypes.object.isRequired
+  content: PropTypes.object.isRequired
 }
 
-const workShownOrder = [0, 1, 2, 3, 4, 5];
+// Which works to show, in order. The recipe app stays in the data but off the page.
+const workShownOrder = [0, 1, 2, 3, 4, 5, 6]
 
-export function Projects({content}) {
-
+export function Projects({ content }) {
   return (
-    <>
-      <div
-        className="flex flex-col items-center">
+    <section id="projects" className="py-12 md:py-16 bg-gradient-to-b from-teal-50 to-cyan-50">
+      <div className="container mx-auto px-4 max-w-7xl">
         <motion.div
-          whileHover={{ scale: 1.2 }} 
-          className="text-3xl font-bold m-2 text-brand-1">
-          {content.works}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="text-center mb-16"
+        >
+          <div className="inline-flex items-center gap-2 bg-cyan-100/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+            <FolderKanban className="w-5 h-5 text-slate-800" />
+            <span className="text-sm font-semibold text-slate-800 uppercase tracking-wider">{content.worksBadge}</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">{content.works}</h2>
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">{content.worksDescription}</p>
         </motion.div>
-        <SwiperContainer>
-          <Swiper
-            modules={[Navigation]}
-            slidesPerView={1}
-            spaceBetween={50}
-            slidesPerGroup={1}
-            navigation={true}
-            mousewheel={true}
-            grabCursor={true}
-            loop={true}
-          >            
-            {workShownOrder.map((id) => (  
-              <SwiperSlide key={id}>
-                <WorkCard work={content.listOfWorks[id]} />
-              </SwiperSlide>          
-            ))}
-          </Swiper>
-        </SwiperContainer>
+
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+          variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-100px' }}
+        >
+          {workShownOrder.map((id) => {
+            const work = content.listOfWorks[id]
+            if (!work) return null
+            return (
+              <motion.div
+                key={work.id}
+                variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}
+              >
+                <WorkCard work={work} content={content} />
+              </motion.div>
+            )
+          })}
+        </motion.div>
       </div>
-      <HorizontalDivider />
-    </>
+    </section>
   )
 }

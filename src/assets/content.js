@@ -30,69 +30,20 @@ const listOfSkills = [
     { id: 25, name: "JUnit 5", badgeLink: "https://img.shields.io/badge/JUnit_5-25A162?style=for-the-badge&logo=junit5&logoColor=white" },
     { id: 26, name: "Spring Security", badgeLink: "https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring-security&logoColor=white" },
     { id: 27, name: "Agile Methodologies", badgeLink: "https://img.shields.io/badge/Agile-003366?style=for-the-badge&logo=agile&logoColor=white" },
-    { id: 28, name: "GPT", badgeLink: "https://img.shields.io/badge/GPT-8B0000?style=for-the-badge&logo=openai&logoColor=white"},
-    { 
-        id: 29, 
-        name: "Styled-Components", 
-        badgeLink: "https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" 
-    },
-    { 
-        id: 30, 
-        name: "Vite", 
-        badgeLink: "https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" 
-    },
-    {
-        id: 31,
-        name: "PostgreSQL",
-        badgeLink: "https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"
-    },
-    {
-        id: 32,
-        name: "Supabase",
-        badgeLink: "https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white"
-    },
-    {
-        id: 33,
-        name: "PWA",
-        badgeLink: "https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white"
-    },
-    {
-        id: 34,
-        name: "Dexie (IndexedDB)",
-        badgeLink: "https://img.shields.io/badge/Dexie_(IndexedDB)-1E3A5F?style=for-the-badge&logo=dexie&logoColor=white"
-    },
-    {
-        id: 35,
-        name: "Framer Motion",
-        badgeLink: "https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white"
-    },
-    {
-        id: 36,
-        name: "Vitest",
-        badgeLink: "https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white"
-    },
-    {
-        id: 37,
-        name: "Vercel",
-        badgeLink: "https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"
-    },
-    {
-        id: 38,
-        name: "Playwright",
-        badgeLink: "https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white"
-    },
-    {
-        id: 39,
-        name: "Web Push",
-        badgeLink: "https://img.shields.io/badge/Web_Push-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white"
-    },
-    {
-        id: 40,
-        name: "Electron",
-        badgeLink: "https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white"
-    }
-    ];
-    
+    { id: 28, name: "GPT", badgeLink: "https://img.shields.io/badge/GPT-8B0000?style=for-the-badge&logo=openai&logoColor=white" },
+    { id: 29, name: "Styled-Components", badgeLink: "https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" },
+    { id: 30, name: "Vite", badgeLink: "https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" },
+    { id: 31, name: "PostgreSQL", badgeLink: "https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" },
+    { id: 32, name: "Supabase", badgeLink: "https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white" },
+    { id: 33, name: "PWA", badgeLink: "https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" },
+    { id: 34, name: "Dexie (IndexedDB)", badgeLink: "https://img.shields.io/badge/Dexie_(IndexedDB)-1E3A5F?style=for-the-badge&logo=dexie&logoColor=white" },
+    { id: 35, name: "Framer Motion", badgeLink: "https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" },
+    { id: 36, name: "Vitest", badgeLink: "https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white" },
+    { id: 37, name: "Vercel", badgeLink: "https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" },
+    { id: 38, name: "Playwright", badgeLink: "https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white" },
+    { id: 39, name: "Web Push", badgeLink: "https://img.shields.io/badge/Web_Push-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" },
+    { id: 40, name: "Electron", badgeLink: "https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" }
+];
 
 function changeBadgeStyle(skill) {
     const newSkill = skill;
@@ -106,8 +57,8 @@ function filterAndChangeBadgeStyle(ids) {
     const result = ids.map(id => filteredSkills.find(skill => skill.id === id));
     return result.map(skill => changeBadgeStyle(skill));
 }
-  
-const aboutMeText = [ `
+
+const aboutMeText = [`
 <div>
     Olá! Meu nome é Ítalo Araújo e sou graduado em Engenharia Química pela PUC-MG e pela University of Maryland (EUA). Também sou formado em Desenvolvimento Web FullStack pela Trybe.
     <p>Sou apaixonado por resolver problemas, criar ferramentas úteis, intuitivas e agradáveis de usar. Estou sempre pronto para aprender e me desenvolver.
@@ -142,7 +93,7 @@ const formContent = [
         messageProblem: "Houve um problema ao enviar sua mensagem. Por favor, tente novamente mais tarde.",
         sending: "Enviando...",
         send: "Enviar"
-    },  
+    },
     {   placeHolderName: "Name",
         nameRequired: "Please enter your name",
         placeHolderEmail: "Email",
@@ -155,11 +106,17 @@ const formContent = [
         messageSuccess: "Message sent successfully!",
         messageProblem: "There was a problem sending your message. Please try again later.",
         sending: "Sending...",
-        send: "Send"},
-]
+        send: "Send"
+    }
+];
 
 const PortugueseContent = {
     heading: "Ítalo Araújo",
+    subtitle: "Desenvolvedor Full Stack",
+    navAbout: "Sobre",
+    navSkills: "Habilidades",
+    navProjects: "Projetos",
+    navContact: "Contato",
     aboutMe: `<div>
     <p>Engenheiro</p>
     <p>Desenvolvolvedor Web</p>
@@ -167,16 +124,35 @@ const PortugueseContent = {
     </div>`,
     aboutMeText: aboutMeText[0],
     skills: "Habilidades",
+    skillsBadge: "Especialidades",
+    skillsDescription: "Tecnologias e ferramentas com as quais trabalho para criar soluções incríveis",
     listOfSkills: listOfSkills,
     works: "Trabalhos",
+    worksBadge: "Portfólio",
+    worksDescription: "Uma coleção de projetos que demonstram minhas habilidades e experiência",
     listOfWorks: listOfWorksPtBr,
     contact: "Contato",
-    contactText: `<div>Entre em contato comigo! <p>Telefone: (31) 99538 - 5299</p></div>`,
-    formContent: formContent[0]
+    getInTouch: "Entre em Contato",
+    connectWithMe: "Conecte-se Comigo",
+    socialMedia: "Redes Sociais",
+    contactText: "",
+    formContent: formContent[0],
+    badgeFullStack: "Full Stack",
+    badgeFullStackDesc: "Soluções completas",
+    badgeEngineer: "Engenheiro",
+    badgeEngineerDesc: "Resolvedor de problemas",
+    badgeLearner: "Aprendiz",
+    badgeLearnerDesc: "Sempre evoluindo",
+    liveWebsite: "Visite o Site"
 };
 
 const EnglishContent = {
     heading: "Italo Araujo",
+    subtitle: "Full Stack Developer",
+    navAbout: "About",
+    navSkills: "Skills",
+    navProjects: "Projects",
+    navContact: "Contact",
     aboutMe: `<div>
     <p>Full-Stack</p>
     <p>Web Developer</p>
@@ -185,13 +161,26 @@ const EnglishContent = {
     `,
     aboutMeText: aboutMeText[1],
     skills: "Skills",
+    skillsBadge: "Expertise",
+    skillsDescription: "Technologies and tools I work with to build amazing solutions",
     listOfSkills: listOfSkills,
     works: "Works",
+    worksBadge: "Portfolio",
+    worksDescription: "A collection of projects showcasing my skills and experience",
     listOfWorks: listOfWorks,
     contact: "Contact",
-    contactText: `<div>Get in touch with me! <p>Phone: +55 (31) 99538 - 5299</p></div>`,
-    formContent: formContent[1]
+    getInTouch: "Get In Touch",
+    connectWithMe: "Connect With Me",
+    socialMedia: "Social Media",
+    contactText: "",
+    formContent: formContent[1],
+    badgeFullStack: "Full Stack",
+    badgeFullStackDesc: "End-to-end solutions",
+    badgeEngineer: "Engineer",
+    badgeEngineerDesc: "Problem solver",
+    badgeLearner: "Learner",
+    badgeLearnerDesc: "Always growing",
+    liveWebsite: "Live Website"
 };
-
 
 export { PortugueseContent, EnglishContent, filterAndChangeBadgeStyle };
