@@ -39,13 +39,13 @@ const listOfWorks = [
     {
         id: 0,
         title: "iBar — Management SaaS for Bars & Restaurants",
-        description: "A subscription product running in a real venue. An offline-first PWA where tabs, tables, quick sales, store credit, menu and reports keep working for days without internet: Dexie (IndexedDB) is the local source of truth and an outbox syncs to Supabase once the network is back, merging by timestamp and pushing updates over Realtime to every device on the same login. Built on a three-layer architecture, covered by Vitest and Playwright, and also packaged as a desktop build with Electron.",
+        description: "A subscription product running in a real venue. It brings tabs, tables, quick sales, store credit, menu and reports together in one system, under the venue's own login and across several devices at once. Built for the rhythm of a busy bar: the team keeps working when the internet drops, and everything catches up on its own once it is back. Runs on phone, tablet and computer, or as a desktop app.",
         ...commonDataList[0]
     },
     {
         id: 1,
         title: "iBar Delivery — Online Ordering Store",
-        description: "The customer-facing storefront of iBar. Diners browse the menu on their phone, choose delivery, pickup or table service via QR code, pay by Pix, cash or card, and follow the order live until it arrives. Prices and menu always come from the server through Postgres RPCs, so the client is never trusted with pricing. An order only becomes a sale once the cashier completes it, with stock deducted.",
+        description: "The customer-facing storefront of iBar. Diners browse the menu on their phone, choose delivery, pickup or table service via QR code, pay by Pix, cash or card, and follow the order live until it arrives. Orders land straight with the venue, where the cashier closes the sale and stock stays in step. Light enough to open quickly on any phone.",
         ...commonDataList[1]
     },
     {
@@ -91,13 +91,13 @@ const listOfWorksPtBr = [
     {
         id: 0,
         title: "iBar — SaaS de gestão para bares e restaurantes",
-        description: "Produto por assinatura, em uso real em estabelecimento comercial. PWA offline-first em que comandas, mesas, venda rápida, fiado, cardápio e relatórios continuam funcionando por dias sem internet: o Dexie (IndexedDB) é a fonte da verdade local e uma outbox sincroniza com o Supabase quando a rede volta, resolvendo conflitos pelo timestamp mais novo e propagando as mudanças por Realtime para todos os aparelhos no mesmo login. Arquitetura em três camadas, testes com Vitest e Playwright, e build desktop com Electron.",
+        description: "Produto por assinatura, em uso real em estabelecimento comercial. Reúne comandas, mesas, venda rápida, fiado, cardápio e relatórios num sistema só, no mesmo login da casa e em vários aparelhos ao mesmo tempo. Feito para o corre de um bar cheio: a equipe continua trabalhando quando a internet cai, e tudo se acerta sozinho quando ela volta. Roda no celular, no tablet e no computador, ou como aplicativo de desktop.",
         ...commonDataList[0]
     },
     {
         id: 1,
         title: "iBar Delivery — Loja online de pedidos",
-        description: "A loja online do iBar. O cliente vê o cardápio pelo celular, escolhe entrega, retirada ou mesa (pelo QR code), paga com Pix, dinheiro ou cartão e acompanha o pedido até chegar. Preço e cardápio vêm sempre do servidor por RPC no Postgres, então o front nunca é dono do preço. O pedido só vira venda quando o caixa conclui, com baixa de estoque.",
+        description: "A loja online do iBar. O cliente vê o cardápio pelo celular, escolhe entrega, retirada ou mesa (pelo QR code), paga com Pix, dinheiro ou cartão e acompanha o pedido até chegar. O pedido cai direto na loja, onde o caixa fecha a venda e o estoque acompanha. Leve o bastante para abrir rápido em qualquer celular.",
         ...commonDataList[1]
     },
     {
