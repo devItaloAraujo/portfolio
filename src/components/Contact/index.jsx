@@ -28,7 +28,7 @@ export function Contact({content}) {
           </div>
           <footer
             className="text-sm text-first-blue"
-          >© 2024 Ítalo Araújo. Todos os direitos reservados.</footer>
+          >© 2024 Ítalo Tecnologia™. Todos os direitos reservados.</footer>
         </motion.div>
       </>
     )
