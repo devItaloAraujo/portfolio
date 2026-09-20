@@ -41,11 +41,56 @@ const listOfSkills = [
         name: "Vite", 
         badgeLink: "https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" 
     },
-    { 
-        id: 31, 
-        name: "PostgreSQL", 
-        badgeLink: "https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" 
-    }    
+    {
+        id: 31,
+        name: "PostgreSQL",
+        badgeLink: "https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"
+    },
+    {
+        id: 32,
+        name: "Supabase",
+        badgeLink: "https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white"
+    },
+    {
+        id: 33,
+        name: "PWA",
+        badgeLink: "https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white"
+    },
+    {
+        id: 34,
+        name: "Dexie (IndexedDB)",
+        badgeLink: "https://img.shields.io/badge/Dexie_(IndexedDB)-1E3A5F?style=for-the-badge&logo=dexie&logoColor=white"
+    },
+    {
+        id: 35,
+        name: "Framer Motion",
+        badgeLink: "https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white"
+    },
+    {
+        id: 36,
+        name: "Vitest",
+        badgeLink: "https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white"
+    },
+    {
+        id: 37,
+        name: "Vercel",
+        badgeLink: "https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"
+    },
+    {
+        id: 38,
+        name: "Playwright",
+        badgeLink: "https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white"
+    },
+    {
+        id: 39,
+        name: "Web Push",
+        badgeLink: "https://img.shields.io/badge/Web_Push-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white"
+    },
+    {
+        id: 40,
+        name: "Electron",
+        badgeLink: "https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white"
+    }
     ];
     
 

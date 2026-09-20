@@ -13,7 +13,7 @@ Projects.propTypes = {
     content: PropTypes.object.isRequired
 }
 
-const workShownOrder = [3, 2, 1, 0];
+const workShownOrder = [0, 1, 2, 3, 4, 5];
 
 export function Projects({content}) {
 

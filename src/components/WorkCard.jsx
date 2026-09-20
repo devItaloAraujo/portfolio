@@ -29,11 +29,12 @@ export function WorkCard({work}) {
             <img key={skill.id} src={skill.badgeLink} alt={skill.name} className="m-1" />
         ))}        
         </div>
+        {work.links.github &&
         <button
           className="bg-first-blue text-white rounded-lg p-2 m-2 w-[300px]"
         >
           <a
-            href={work.links[0]}
+            href={work.links.github}
             target="_blank"
             rel="noreferrer"
             className='flex justify-around items-center'
@@ -42,19 +43,20 @@ export function WorkCard({work}) {
            <VscGithub size={'2em'} />
           </a>
         </button>
-        {work.links[1] &&
+        }
+        {work.links.site &&
         <button
           className="bg-first-blue text-white rounded-lg p-2 m-2 w-[300px]"
         >
           <a
-            href={work.links[1]}
+            href={work.links.site}
             target="_blank"
             rel="noreferrer"
             className='flex justify-around items-center'
           >
             WebSite
             <TbWorld size={'2em'}/>
-          </a>  
+          </a>
         </button>
         }
       </div>
