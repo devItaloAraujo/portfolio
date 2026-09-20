@@ -39,49 +39,49 @@ const listOfWorks = [
     {
         id: 0,
         title: "iBar — Management SaaS for Bars & Restaurants",
-        description: "A subscription product running in a real venue. It brings tabs, tables, quick sales, store credit, menu and reports together in one system, under the venue's own login and across several devices at once. Built for the rhythm of a busy bar: the team keeps working when the internet drops, and everything catches up on its own once it is back. Runs on phone, tablet and computer, or as a desktop app.",
+        description: "Subscription SaaS in production at a commercial venue. React and TypeScript PWA covering tabs, tables, quick sales, store credit, menu and reporting, with offline operation and cloud sync across multiple devices on a shared account. Also distributed as a desktop application.",
         ...commonDataList[0]
     },
     {
         id: 1,
         title: "iBar Delivery — Online Ordering Store",
-        description: "The customer-facing storefront of iBar. Diners browse the menu on their phone, choose delivery, pickup or table service via QR code, pay by Pix, cash or card, and follow the order live until it arrives. Orders land straight with the venue, where the cashier closes the sale and stock stays in step. Light enough to open quickly on any phone.",
+        description: "Customer-facing ordering storefront for iBar. React and TypeScript web application where customers browse the menu, choose delivery, pickup or table service, pay by Pix, cash or card, and track the order until it arrives. Integrated with the venue's catalogue and point of sale.",
         ...commonDataList[1]
     },
     {
         id: 2,
         title: "Bate Ponto — Time-Clock PWA",
-        description: "A progressive web app for clocking in and out from a phone. It records entries and exits, sets the expected schedule per weekday, and tracks absences and the running hour balance. Works offline with Dexie (IndexedDB) and syncs to Supabase, while reminders reach the user with the app closed through Web Push and an Edge Function.",
+        description: "Time-tracking PWA built with React 19 and TypeScript. Records clock-in and clock-out, configurable weekly schedules, absences and a running hour balance, with offline use, cloud sync and push reminders. Business rules covered by unit tests.",
         ...commonDataList[2]
     },
     {
         id: 3,
         title: "Website for Independent Psychologist",
-        description: "A live site for psychologist Thatiane Araújo Souza, currently bringing in patients. It presents her practice, specialties and patient testimonials, and puts booking one click away through WhatsApp. Served by a Node/Express app in a Docker container and deployed on Fly.io.",
+        description: "Live site for an independent psychologist, presenting her practice, specialties and patient testimonials, with WhatsApp as the booking channel. Static front-end served by a Node/Express container and deployed on Fly.io.",
         ...commonDataList[3]
     },
     {
         id: 4,
         title: "Electronics Store Website",
-        description: "Website built with React for promoting a local store focused on selling toys, electronics, and cell phone accessories. This platform facilitates product sales and brand promotion.",
+        description: "Promotional website for a local retailer of toys, electronics and phone accessories, built to support product sales and brand presence. React front-end with Vite and Tailwind CSS, containerised with Docker.",
         ...commonDataList[4]
     },
     {
         id: 5,
         title: "Farms Manager (Back-end)",
-        description: "A Java back-end application developed using the Spring ecosystem, specifically Spring Boot Web and Spring Data with a MySQL database. This project is a RESTful API that manages farms and their crops, following a layered architecture to ensure scope separation and easy code maintenance.",
+        description: "RESTful back-end for managing farms and their crops. Java with Spring Boot Web and Spring Data JPA over a MySQL database, organised in a layered architecture and run under Docker.",
         ...commonDataList[5]
     },
     {
         id: 6,
         title: "Employee Database Manager",
-        description: "This project is a RESTful API plus graphic interface developed using Spring Boot (Java) and Node. It is designed to manage employee data for an ERP (Enterprise Resource Planning) system. The API provides various endpoints to interact with the employee data.",
+        description: "RESTful API with a web interface for employee records in an ERP context. Spring Boot back-end over PostgreSQL with unit and integration tests, and a React front-end built with Vite and Tailwind CSS.",
         ...commonDataList[6]
     },
     {
         id: 7,
         title: "Recipe Sharing App",
-        description: "A front-end application that consumes data from a public API, allowing users to search for and store culinary recipes. Users can favorite and share recipes. The application includes pages for logging in, following recipes, favoriting recipes, completed recipes, and more.",
+        description: "Front-end application consuming a public recipes API, with search, favourites and sharing across login, recipe detail and completed-recipe views. React with hooks and TypeScript, covered by unit tests.",
         ...commonDataList[7]
     }
 ];
@@ -91,49 +91,49 @@ const listOfWorksPtBr = [
     {
         id: 0,
         title: "iBar — SaaS de gestão para bares e restaurantes",
-        description: "Produto por assinatura, em uso real em estabelecimento comercial. Reúne comandas, mesas, venda rápida, fiado, cardápio e relatórios num sistema só, no mesmo login da casa e em vários aparelhos ao mesmo tempo. Feito para o corre de um bar cheio: a equipe continua trabalhando quando a internet cai, e tudo se acerta sozinho quando ela volta. Roda no celular, no tablet e no computador, ou como aplicativo de desktop.",
+        description: "SaaS por assinatura, em produção em estabelecimento comercial. PWA em React e TypeScript que cobre comandas, mesas, venda rápida, fiado, cardápio e relatórios, com operação offline e sincronização em nuvem entre vários aparelhos na mesma conta. Também distribuído como aplicativo de desktop.",
         ...commonDataList[0]
     },
     {
         id: 1,
         title: "iBar Delivery — Loja online de pedidos",
-        description: "A loja online do iBar. O cliente vê o cardápio pelo celular, escolhe entrega, retirada ou mesa (pelo QR code), paga com Pix, dinheiro ou cartão e acompanha o pedido até chegar. O pedido cai direto na loja, onde o caixa fecha a venda e o estoque acompanha. Leve o bastante para abrir rápido em qualquer celular.",
+        description: "Loja de pedidos online do iBar. Aplicação web em React e TypeScript na qual o cliente consulta o cardápio, escolhe entrega, retirada ou mesa, paga com Pix, dinheiro ou cartão e acompanha o pedido até a entrega. Integrada ao catálogo e ao caixa da loja.",
         ...commonDataList[1]
     },
     {
         id: 2,
         title: "Bate Ponto — PWA de controle de ponto",
-        description: "Aplicativo web para bater ponto pelo celular. Registra entrada e saída, define o expediente por dia da semana e acompanha faltas e banco de horas. Funciona offline com Dexie (IndexedDB) e sincroniza com o Supabase, enquanto os lembretes chegam com o app fechado via Web Push e Edge Function.",
+        description: "PWA de controle de ponto em React 19 e TypeScript. Registra entrada e saída, expediente configurável por dia da semana, faltas e banco de horas, com uso offline, sincronização em nuvem e lembretes por push. Regras de negócio cobertas por testes unitários.",
         ...commonDataList[2]
     },
     {
         id: 3,
         title: "Website para Psicóloga autônoma",
-        description: "Site da psicóloga Thatiane Araújo Souza, no ar e captando pacientes. Apresenta a profissional, suas especialidades e depoimentos de pacientes, e deixa o agendamento a um clique pelo WhatsApp. Servido por uma aplicação Node/Express em contêiner Docker, com deploy na Fly.io.",
+        description: "Site no ar de psicóloga autônoma, apresentando a profissional, suas especialidades e depoimentos de pacientes, com o WhatsApp como canal de agendamento. Front-end estático servido por contêiner Node/Express, com deploy na Fly.io.",
         ...commonDataList[3]
     },
     {
         id: 4,
         title: "Website de Loja de Eletrônicos",
-        description: "Website construído com React para divulgação de loja local focada na venda de brinquedos, eletrônicos e acessórios para celular. Esta plataforma facilita a venda de produtos e a divulgação da marca.",
+        description: "Website de divulgação para varejista local de brinquedos, eletrônicos e acessórios para celular, voltado a apoiar a venda de produtos e a presença da marca. Front-end React com Vite e Tailwind CSS, containerizado com Docker.",
         ...commonDataList[4]
     },
     {
         id: 5,
         title: "Farms Manager (Back-end)",
-        description: "Uma aplicação back-end Java desenvolvida utilizando o ecossistema Spring, especificamente o Spring Boot Web e o Spring Data com um banco de dados MySQL. Este projeto é uma API RESTful que gerencia fazendas e suas plantações, seguindo uma arquitetura em camadas para garantir a separação de escopos e a fácil manutenção do código.",
+        description: "Back-end RESTful para gestão de fazendas e suas plantações. Java com Spring Boot Web e Spring Data JPA sobre banco MySQL, organizado em arquitetura em camadas e executado sob Docker.",
         ...commonDataList[5]
     },
     {
         id: 6,
         title: "Gerenciador de base de dados de Funcionários",
-        description: "Este projeto é uma API RESTful com interface gráfica desenvolvida usando Spring Boot (Java) e Node. Foi projetado para gerenciar dados de funcionários para um sistema ERP (Enterprise Resource Planning). A API fornece vários endpoints para interagir com os dados do funcionário.",
+        description: "API RESTful com interface web para dados de funcionários em contexto de ERP. Back-end em Spring Boot sobre PostgreSQL com testes unitários e de integração, e front-end React construído com Vite e Tailwind CSS.",
         ...commonDataList[6]
     },
     {
         id: 7,
         title: "App de Compartilhar Receitas",
-        description: "Uma aplicação front-end que consome dados de uma API pública, permitindo aos usuários pesquisar e armazenar receitas culinárias. Os usuários podem favoritar e compartilhar receitas. A aplicação inclui páginas para login, seguir receitas, favoritar receitas, receitas concluídas e mais.",
+        description: "Aplicação front-end que consome uma API pública de receitas, com busca, favoritos e compartilhamento, além de telas de login, detalhe da receita e receitas concluídas. React com hooks e TypeScript, coberta por testes unitários.",
         ...commonDataList[7]
     }
 ];
